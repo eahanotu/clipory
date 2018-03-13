@@ -9,9 +9,13 @@
             <li class="list-group-item">{{$video}}</li>
         @endforeach
         </ul>
+    @else
+        <p>No existing videos</p>
     @endif
+
     
-    <form method="POST" name="add" class="form" action="">
+    
+    <form method="POST" name="add" class="form" action="/">
         <div class="form-group">
             <input type="file" name="vid" accept=".mp4" class="btn">
         </div>

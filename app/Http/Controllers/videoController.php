@@ -40,9 +40,10 @@ class videoController extends Controller
     {
         //
         $video = new Video;
-        $video->title = $request->input('name');
+        $video->title = $request->input('vid');
+        $video->save();
 
-        return ;
+        return back();
     }
 
     /**
